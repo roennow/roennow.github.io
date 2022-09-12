@@ -4,7 +4,7 @@
   "description": "my splash page for roennow.co",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "rm -rf dist && parcel build src/index.html --public-url ./ && cp src/CNAME dist/CNAME",
+    "build": "rm -rf dist && parcel build src/index.html --public-url ./ && cp src/CNAME dist/CNAME && cp src/open-graph.jpg dist/open-graph.jpg",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "source": "src/index.html",
