@@ -28,11 +28,19 @@
           <p>Drop a message: <a href="mailto:bjarke@roennow.co" target="_blank" class="underline decoration-orange-500 transition-colors hover:decoration-teal-500">bjarke@roennow.co</a></p>
         </div>
         <div>
-          <picture>
-            <source type="image/webp" srcset="profile.jpg?as=webp&width=256, profile.jpg?as=webp&width=512 2x" />
-            <source type="image/jpeg" srcset="profile.jpg?width=256, profile.jpg?width=512 2x" />
-            <img src="profile.jpg?width=256" width="256" height="256" class="mb-8 w-48 rounded-full md:mb-0 md:w-56 lg:w-64" alt="profile image" />
-          </picture>
+          <div class="group relative">
+            <picture>
+              <source type="image/webp" srcset="profile.jpg?as=webp&width=256, profile.jpg?as=webp&width=512 2x" />
+              <source type="image/jpeg" srcset="profile.jpg?width=256, profile.jpg?width=512 2x" />
+              <img src="profile.jpg?width=256" width="256" height="256" class="mb-8 w-48 rounded-full md:mb-0 md:w-56 lg:w-64" alt="profile image" />
+            </picture>
+            <div
+              class="pointer-events-none absolute -left-8 -bottom-4 h-24 w-24 rounded-full bg-orange-500 mix-blend-multiply transition-all duration-300 ease-in group-hover:h-36 group-hover:w-36 group-hover:translate-x-32 group-hover:-translate-y-20 md:h-32 md:w-32 md:group-hover:h-48 md:group-hover:w-48 md:group-hover:translate-x-36 md:group-hover:-translate-y-24"
+            ></div>
+            <div
+              class="pointer-events-none absolute -right-12 -top-4 h-36 w-36 rounded-full bg-teal-500 mix-blend-multiply transition-all duration-300 ease-in group-hover:h-24 group-hover:w-24 group-hover:-translate-x-44 group-hover:translate-y-32 md:h-48 md:w-48 md:group-hover:h-32 md:group-hover:w-32 md:group-hover:-translate-x-52 md:group-hover:translate-y-40"
+            ></div>
+          </div>
         </div>
       </div>
     </div>
