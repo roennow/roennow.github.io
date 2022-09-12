@@ -2,18 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+@layer base {
+  @font-face {
     font-family: "Futura";
     font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: url("./Futura-Med.woff2");
-}
+  }
 
-@font-face {
+  @font-face {
     font-family: "Futura";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url("./Futura-Bol.woff2");
+  }
+}
+
+@layer components {
+  .bubble-orange {
+    @apply pointer-events-none absolute -left-8 -bottom-4 h-24 w-24 rounded-full bg-orange-500 mix-blend-multiply transition-all duration-300 ease-in group-hover:h-36 group-hover:w-36 group-hover:translate-x-32 group-hover:-translate-y-20 md:h-32 md:w-32 md:group-hover:h-48 md:group-hover:w-48 md:group-hover:translate-x-36 md:group-hover:-translate-y-24;
+  }
+  .bubble-teal {
+    @apply pointer-events-none absolute -right-12 -top-4 h-36 w-36 rounded-full bg-teal-500 mix-blend-multiply transition-all duration-300 ease-in group-hover:h-24 group-hover:w-24 group-hover:-translate-x-44 group-hover:translate-y-32 md:h-48 md:w-48 md:group-hover:h-32 md:group-hover:w-32 md:group-hover:-translate-x-52 md:group-hover:translate-y-40;
+  }
 }
